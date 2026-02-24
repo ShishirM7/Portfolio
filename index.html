@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shishir Maindan | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { position: relative; }
+        /* Sidebar Styling */
+        #sidebar {
+            width: 300px; position: fixed; top: 0; left: 0; height: 100vh;
+            background: #2c3e50; color: white; padding: 2rem; text-align: center;
+        }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid #3498db; margin-bottom: 1rem; }
+        #content { margin-left: 300px; padding: 3rem; }
+        
+        /* Interactive Experience Cards */
+        .exp-card {
+            border-left: 4px solid #3498db; background: #f8f9fa;
+            padding: 1.5rem; margin-bottom: 2rem; transition: all 0.3s ease;
+            cursor: default;
+        }
+        .exp-details { display: none; margin-top: 1rem; color: #555; }
+        .exp-card:hover { background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: translateX(10px); }
+        .exp-card:hover .exp-details { display: block; }
+        
+        section { padding: 60px 0; border-bottom: 1px solid #eee; }
+        .nav-link { color: rgba(255,255,255,0.7); margin: 10px 0; }
+        .nav-link:hover { color: #3498db; }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebar">
+
+    <nav id="sidebar">
+        <img src="your-photo.jpg" alt="Shishir Maindan" class="profile-img">
+        <h3>Shishir Maindan</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        </ul>
+        <div class="mt-4">
+            <small>Duisburg, Germany</small>
+        </div>
+    </nav>
+
+    <main id="content">
+        <section id="about">
+            <h1>Shishir <span class="text-primary">Maindan</span></h1>
+            <p class="lead">M.Sc. Mechatronics Engineer focused on Autonomous Driving & Machine Learning.</p>
+            <p>I specialize in <strong>Physics Informed Neural Networks (PINN)</strong> and vehicle state estimation. With experience at <strong>Audi AG</strong>, I bridge the gap between mechanical engineering and advanced data-driven control systems.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="exp-card">
+                <h4>University of Duisburg-Essen</h4>
+                <p><strong>M.Sc. Mechanical Engineering (Mechatronics)</strong> </p>
+                <div class="exp-details">
+                    <ul>
+                        <li>Focus: Machine Learning, Computer Vision, Control Theory.</li>
+                        <li>Member of the VDI Autonomous Driving Challenge Team.</li>
+                        <li>Grade: 2,5.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="exp-card">
+                <h4>Intern - Audi AG</h4>
+                <p><em>April 2024 - September 2024</em> </p>
+                <div class="exp-details">
+                    <ul>
+                        <li>Data-driven models for wear diagnosis in brake pads using MATLAB/Simulink.</li>
+                        <li>Developed test plans and adapted test bench controls via dSPACE ControlDesk.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exp-card">
+                <h4>Mechanical Engineer - Arago Electric</h4>
+                <p><em>August 2018 - March 2020</em></p>
+                <div class="exp-details">
+                    <ul>
+                        <li>Designed induction and synchronous reluctance motors.</li>
+                        <li>Thermal design for cooling systems in EV components like inverters and DC/DC converters.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Programming</h5>
+                    <p>MATLAB/Simulink (Advanced), Python (Intermediate), C.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Software & Tools</h5>
+                    <p>SolidWorks, ANSYS, dSPACE, Linux, LaTeX.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
